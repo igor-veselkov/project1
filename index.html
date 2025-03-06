@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Кубик-кот</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="container">
+    <span class="logo">
+        КУБИК
+    </span>
+        <nav class="nav">
+            <ul>
+                <li class="active">
+                    <a href="#">Домой</a>
+                </li>
+                <li>
+                    <a href="#">Блог Кубика</a>
+                </li>
+                <li>
+                    <a href="#">Фотогалерея</a>
+                </li>
+                <li>
+                    <a href="#">Полезные советы</a>
+                </li>
+                <li class="btn"><a href="#">Связаться со мной</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero container">
+        <div class="hero--info">
+            <h2>Привет, я кот Кубик — и это мой сайт! </h2>
+            <h1>Кто я такой?</h1>
+            <p>Мур-мур! Добро пожаловать в мой уютный уголок в интернете. Здесь я, кот по имени Кубик, делюсь своими
+                пушистыми мыслями, лапочными историями и важными делами.</p>
+            <button class="btn">ЧИТАТЬ</button>
+        </div>
+        <img class="hero--img" src="/img/scottish_fold_cat_part_4.png" alt="">
+    </div>
+    <div class="container trending">
+        <a href="#" class="see-all">SEE ALL</a>
+        <h3>Мои фоточки</h3>
+        <div class="games">
+            <div class="block">
+                <img src="/img/scottish_fold_cat_part_1.png" alt="">
+                <span>
+                   42 лайка
+                </span>
+            </div>
+            <div class="block">
+                <img src="/img/scottish_fold_cat_part_7.png" alt="">
+                <span>
+                    21 лайк
+                </span>
+            </div>
+            <div class="block">
+                <img src="/img/scottish_fold_cat_part_6.png" alt="">
+                <span>
+                    33 лайка
+                </span>
+            </div>
+            <div class="block">
+                <img src="/img/scottish_fold_cat_part_8.png" alt="">
+                <span>
+                    26 лайков
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container big-text">
+        Я кот особенный — с квадратным характером и круглыми глазами. Люблю спать, есть, наблюдать за людьми и, конечно,
+        иногда программировать лапками.
+    </div>
+    <div class="container banner">
+        <h3>Почему Кубик?</h3>
+        <p>Потому что он квадратный… ну почти. Круглый с некоторых ракурсов, квадратный — по характеру. Прямолинейный,
+            но пушистый, с харизмой, которая не оставляет шансов устоять перед ним.</p>
+        <img src="/img/1684834108_ornella-club-p-kot-busik-oboi-2.jpg" alt="">
+    </div>
+    <div class="features">
+        <div class="container">
+            <h3>Жизнь Кубика в картинках и историях</h3>
+            <p>Заходите, знакомьтесь, вдохновляйтесь и улыбайтесь вместе с Кубиком!</p>
+            <div class="info">
+                <div class="block">
+                    <img src="/img/16104720.png" alt="">
+                    <p>Хозяин мягкого дивана и всех самых уютных мест в доме</p>
+                    <img src="/img/arrow.svg" alt="">
+                </div>
+                <div class="block">
+                    <img src="/img/16104720.png" alt="">
+                    <p>Мастер по созданию хаоса с невинными глазами</p>
+                    <img src="/img/arrow.svg" alt="">
+                </div>
+                <div class="block">
+                    <img src="/img/16104720.png" alt="">
+                    <p>Специалист по внезапным прыжкам и тайным играм</p>
+                    <img src="/img/arrow.svg" alt="">
+                </div>
+                <div class="block">
+                    <img src="/img/16104720.png" alt="">
+                    <p>Профессиональный дегустатор вкусняшек и хранитель тайн</p>
+                    <img src="/img/arrow.svg" alt="">
+                </div>
+                <div class="block">
+                    <img src="/img/16104720.png" alt="">
+                    <p>Главный проверяющий всех коробок, пакетов и сумок</p>
+                    <img src="/img/arrow.svg" alt="">
+                </div>
+                <div class="block">
+                    <img class="video" src="/img/16104720.png" alt="">
+                    <p>Куратор спонтанных марафонов по квартире</p>
+                    <img class="arrow" src="/img/arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container email">
+        <h3>Напиши мне</h3>
+        <p>Если хочешь покормить меня, поиграть или просто погладить - дай знать</p>
+        <div class="block">
+            <div>
+                <h4>Оставь свою почту</h4>
+                <p>Я надеюсь, что она у тебя есть, так как позвонить ты мне не сможешь</p>
+            </div>
+            <div>
+                <input type="email" id="emailField" placeholder="Тут твой Email">
+                <button onclick="checkEmail()">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="blocks container">
+        <div>
+            <span class="logo">КУБИК</span>
+            <p>Здесь могла быть ваша реклама</p>
+        </div>
+        <div>
+            <h4>Блог Кубика</h4>
+            <ul>
+                <li>Я ворую корм</li>
+                <li>Я играю с мышкой</li>
+                <li>Я охочусь</li>
+                <li>Я бегаю по комнате</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Мои контакты</h4>
+            <p>Курган, 2-й микрорайон, 8</p>
+            <p><a href="mailto:ebaka@kub.ru">ebaka@kub.ru</a></p>
+        </div>
+    </div>
+    <hr>
+    <p>Все права не защищены</p>
+</footer>
+
+<script>
+    function checkEmail() {
+        let email = document.querySelector('#emailField').value;
+        if (!email.includes('@')) alert("Нет символа @")
+        else if (!email.includes('.')) alert("Нет символа .");
+        else alert("Ты молодец!")
+    }
+</script>
+
+</body>
+</html>
