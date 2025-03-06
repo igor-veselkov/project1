@@ -11,6 +11,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     color: #fff;
+    overflow-x: hidden;
 }
 
 a {
@@ -19,6 +20,7 @@ a {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 .wrapper {
@@ -27,7 +29,8 @@ img {
 }
 
 .container {
-    width: 1400px;
+    max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -375,4 +378,126 @@ footer > p {
     text-align: center;
 }
 
-/*Contacts*/
+@media (max-width: 1024px) {
+    header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero--info {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .hero--info h1 {
+        font-size: 36px;
+    }
+
+    .trending .games {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .trending .games img {
+        max-width: 150px;
+    }
+
+    .features {
+        padding: 60px 20px;
+        text-align: center;
+        background-attachment: fixed;
+    }
+
+    .features .info {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .email .block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .email p {
+        padding-bottom: 30px;
+    }
+
+    .email .block input {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 10px;
+        right: 0;
+    }
+
+    .email .block button {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    footer .blocks {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .container, .features, .trending, .hero, .email {
+        max-width: 100%;
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .banner p {
+        line-height: 170%;
+        margin-bottom: 30px;
+        width: 300px;
+    }
+
+    .hero img {
+        position: relative;
+        top: 0;
+        right: 0;
+        padding: 20px 0;
+    }
+
+    .email .block p {
+        width: 300px;
+    }
+}
+
+
